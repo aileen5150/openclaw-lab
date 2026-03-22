@@ -2,279 +2,201 @@
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Polymarket 模拟盘看板</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>🦐 Polymarket 模拟盘</title>
 <style>
-body { background: #0d1117; color: #c9d1d9; }
-.card { background: #161b22; border: 1px solid #30363d; }
-.table { color: #c9d1d9; }
-.table-dark { --bs-table-bg: #161b22; }
-th { color: #8b949e; font-size: 0.8rem; text-transform: uppercase; }
-.stat-val { font-size: 1.8rem; font-weight: bold; }
-.navbar-brand { color: #c9d1d9 !important; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d1117;--surface:#161b22;--border:#30363d;
+  --text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;
+  --green:#3fb950;--red:#f85149;--yellow:#d29922;
+}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;line-height:1.5}
+a{color:var(--accent);text-decoration:none}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.topbar-title{font-weight:600;font-size:16px}
+.topbar-sub{font-size:12px;color:var(--muted)}
+.page{padding:16px;max-width:900px;margin:0 auto}
+.section-title{font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin:20px 0 10px}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:4px}
+@media(min-width:600px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.stat-label{font-size:12px;color:var(--muted);margin-bottom:4px}
+.stat-value{font-size:22px;font-weight:700;line-height:1.2}
+.pos-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.pos-title{font-size:14px;font-weight:500;margin-bottom:10px;line-height:1.4}
+.pos-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.pos-badge{font-size:12px;font-weight:600;padding:2px 10px;border-radius:20px}
+.pos-stat-label{font-size:12px;color:var(--muted)}
+.pos-stat{font-size:13px;font-weight:500;margin-right:4px}
+.pos-pnl{font-size:14px;font-weight:700;margin-left:auto}
+.hist-row{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.hist-row:last-child{border-bottom:none}
+.hist-badge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;white-space:nowrap}
+.hist-market{font-size:13px;color:var(--text);flex:1;min-width:120px}
+.hist-outcome{font-size:12px;color:var(--muted);white-space:nowrap}
+.hist-amount{font-size:13px;font-weight:500;white-space:nowrap}
+.hist-pnl{font-size:13px;font-weight:600;white-space:nowrap}
+.hist-time{font-size:11px;color:var(--muted);white-space:nowrap;margin-left:auto}
+.card-wrap{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px}
+.footer{text-align:center;font-size:12px;color:var(--muted);padding:24px 0 16px}
 </style>
 </head>
 <body>
-<nav class="navbar navbar-dark" style="background:#161b22; border-bottom:1px solid #30363d;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html">← OpenClaw Lab</a>
-    <span class="text-muted small">Polymarket 模拟盘</span>
+<div class="topbar">
+  <div>
+    <div class="topbar-title">🦐 Polymarket 模拟盘</div>
+    <div class="topbar-sub">更新: 2026-03-22 02:21 UTC</div>
   </div>
-</nav>
-<div class="container-fluid py-3">
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <h4 class="mb-0">🦐 Polymarket 模拟盘看板</h4>
-    <small class="text-muted">更新: 2026-03-22 02:03 UTC</small>
-  </div>
+  <a href="../index.html" style="font-size:13px;color:var(--muted)">← Lab</a>
+</div>
 
-  <div class="row g-3 mb-3">
-    <div class="col-6 col-md-3">
-      <div class="card p-3 text-center">
-        <div class="text-muted small">BTC 现价</div>
-        <div class="stat-val text-warning">$69,017</div>
-      </div>
+<div class="page">
+  <div class="section-title">总览</div>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-label">BTC 现价</div>
+      <div class="stat-value" style="color:var(--yellow)">$69,006</div>
     </div>
-    <div class="col-6 col-md-3">
-      <div class="card p-3 text-center">
-        <div class="text-muted small">可用余额</div>
-        <div class="stat-val text-info">$197.64</div>
-      </div>
+    <div class="stat-card">
+      <div class="stat-label">可用余额</div>
+      <div class="stat-value" style="color:var(--accent)">$198</div>
     </div>
-    <div class="col-6 col-md-3">
-      <div class="card p-3 text-center">
-        <div class="text-muted small">总资产估值</div>
-        <div class="stat-val">$992.71</div>
-      </div>
+    <div class="stat-card">
+      <div class="stat-label">总资产</div>
+      <div class="stat-value">$992</div>
     </div>
-    <div class="col-6 col-md-3">
-      <div class="card p-3 text-center">
-        <div class="text-muted small">总盈亏</div>
-        <div class="stat-val text-danger">$-7.29<br><small style="font-size:1rem">(-0.7%)</small></div>
-      </div>
+    <div class="stat-card">
+      <div class="stat-label">总盈亏</div>
+      <div class="stat-value" style="color:#f85149">$-8<span style="font-size:14px;font-weight:400"> (-0.8%)</span></div>
     </div>
   </div>
 
-  <div class="card mb-3">
-    <div class="card-header">📌 当前持仓 (4 个)</div>
-    <div class="card-body p-0">
-      <div class="table-responsive">
-        <table class="table table-dark table-hover table-sm mb-0">
-          <thead><tr>
-            <th>市场</th><th>方向</th><th>份额</th><th>均价</th><th>现价</th><th>成本</th><th>市值</th><th>盈亏</th><th>开仓时间</th>
-          </tr></thead>
-          <tbody>
-        <tr>
-            <td style="max-width:300px">Will Bitcoin dip to $65,000 in March?</td>
-            <td><span class="badge bg-primary">Yes</span></td>
-            <td>397.6</td>
-            <td>$0.503</td>
-            <td>$0.497</td>
-            <td>$199.99</td>
-            <td>$197.61</td>
-            <td class="text-danger">$-2.39 (-1.2%)</td>
-            <td><small class="text-muted">2026-03-22 01:28 UTC</small></td>
-        </tr>
-        <tr>
-            <td style="max-width:300px">Will Ethereum reach $4,000 in March?</td>
-            <td><span class="badge bg-primary">No</span></td>
-            <td>200.4</td>
-            <td>$0.998</td>
-            <td>$0.998</td>
-            <td>$200.00</td>
-            <td>$199.90</td>
-            <td class="text-danger">$-0.10 (-0.1%)</td>
-            <td><small class="text-muted">2026-03-22 01:28 UTC</small></td>
-        </tr>
-        <tr>
-            <td style="max-width:300px">Will Crude Oil (CL) hit (HIGH) $100 by end of March?</td>
-            <td><span class="badge bg-primary">Yes</span></td>
-            <td>267.7</td>
-            <td>$0.747</td>
-            <td>$0.738</td>
-            <td>$199.97</td>
-            <td>$197.56</td>
-            <td class="text-danger">$-2.41 (-1.2%)</td>
-            <td><small class="text-muted">2026-03-22 01:28 UTC</small></td>
-        </tr>
-        <tr>
-            <td style="max-width:300px">SOL 3月底价格走势（预留仓位）</td>
-            <td><span class="badge bg-primary">Yes</span></td>
-            <td>400.0</td>
-            <td>$0.500</td>
-            <td>N/A</td>
-            <td>$200.00</td>
-            <td>$200.00</td>
-            <td class="text-success">+$0.00 (+0.0%)</td>
-            <td><small class="text-muted">2026-03-22 01:28 UTC</small></td>
-        </tr></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <div class="row g-3">
-    <div class="col-12 col-lg-7">
-      <div class="card h-100">
-        <div class="card-header">📋 最近交易记录（最新20条）</div>
-        <div class="card-body p-0">
-          <div class="table-responsive">
-            <table class="table table-dark table-hover table-sm mb-0">
-              <thead><tr>
-                <th>时间</th><th>操作</th><th>市场</th><th>方向</th><th>份额</th><th>价格</th><th>金额</th><th>盈亏</th><th>决策依据</th>
-              </tr></thead>
-              <tbody>
-            <tr>
-                <td>🟢 2026-03-22 01:28 UTC</td>
-                <td><span class="badge bg-success">BUY</span></td>
-                <td>SOL 3月底价格走势（预留仓位）...</td>
-                <td>Yes</td>
-                <td>400.00</td>
-                <td>$0.500</td>
-                <td>$200.00</td>
-                <td>—</td>
-                <td><small class="text-muted">manual entry</small></td>
-            </tr>
-            <tr>
-                <td>🟢 2026-03-22 01:28 UTC</td>
-                <td><span class="badge bg-success">BUY</span></td>
-                <td>Will Crude Oil (CL) hit (HIGH) $100 by e...</td>
-                <td>Yes</td>
-                <td>267.70</td>
-                <td>$0.747</td>
-                <td>$200.00</td>
-                <td>—</td>
-                <td><small class="text-muted">manual entry</small></td>
-            </tr>
-            <tr>
-                <td>🟢 2026-03-22 01:28 UTC</td>
-                <td><span class="badge bg-success">BUY</span></td>
-                <td>Will Ethereum reach $4,000 in March?...</td>
-                <td>No</td>
-                <td>200.40</td>
-                <td>$0.998</td>
-                <td>$200.00</td>
-                <td>—</td>
-                <td><small class="text-muted">manual entry</small></td>
-            </tr>
-            <tr>
-                <td>🟢 2026-03-22 01:28 UTC</td>
-                <td><span class="badge bg-success">BUY</span></td>
-                <td>Will Bitcoin dip to $65,000 in March?...</td>
-                <td>Yes</td>
-                <td>397.60</td>
-                <td>$0.503</td>
-                <td>$200.00</td>
-                <td>—</td>
-                <td><small class="text-muted">manual entry</small></td>
-            </tr>
-            <tr>
-                <td>🔴 2026-03-21 09:15 UTC</td>
-                <td><span class="badge bg-danger">SELL</span></td>
-                <td>Will Bitcoin dip to $65,000 in March?...</td>
-                <td>Yes</td>
-                <td>308.62</td>
-                <td>—</td>
-                <td>$102.62</td>
-                <td class="text-success">+$0.62</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>🟢 2026-03-21 07:31 UTC</td>
-                <td><span class="badge bg-success">BUY</span></td>
-                <td>Will Bitcoin dip to $65,000 in March?...</td>
-                <td>Yes</td>
-                <td>308.62</td>
-                <td>$0.331</td>
-                <td>$102.00</td>
-                <td>—</td>
-                <td><small class="text-muted">BTC现价0845，离目标5k约8.2%距离。市场Yes=33.1%，赔率3.02。自估概率47.0</small></td>
-            </tr>
-            <tr>
-                <td>🔴 2026-03-21 07:31 UTC</td>
-                <td><span class="badge bg-danger">SELL</span></td>
-                <td>Will Bitcoin dip to $65,000 in March?...</td>
-                <td>Yes</td>
-                <td>596.13</td>
-                <td>—</td>
-                <td>$197.02</td>
-                <td class="text-danger">$-2.98</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>🟢 2026-03-21 06:53 UTC</td>
-                <td><span class="badge bg-success">BUY</span></td>
-                <td>Will Bitcoin dip to $65,000 in March?...</td>
-                <td>Yes</td>
-                <td>596.13</td>
-                <td>$0.336</td>
-                <td>$200.00</td>
-                <td>—</td>
-                <td><small class="text-muted"></small></td>
-            </tr></tbody>
-            </table>
+  <div class="section-title">当前持仓 · 4 个</div>
+  
+        <div class="pos-card">
+          <div class="pos-title">Will Bitcoin dip to $65,000 in March?</div>
+          <div class="pos-row">
+            <span class="pos-badge" style="background:#388bfd20;color:#388bfd;border:1px solid #388bfd40">Yes</span>
+            <span class="pos-stat-label">均价</span><span class="pos-stat">0.503</span>
+            <span class="pos-stat-label">现价</span><span class="pos-stat">$0.490</span>
+          </div>
+          <div class="pos-row" style="margin-top:6px">
+            <span class="pos-stat-label">成本</span><span class="pos-stat">$199.99</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$195.02</span>
+            <span class="pos-pnl" style="color:#f85149">$-4.97 (-2.5%)</span>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-5">
-      <div class="card h-100">
-        <div class="card-header">📊 市场快照 <small class="text-muted">(2026-03-22 00:55 UTC)</small></div>
-        <div class="card-body p-0">
-          <div class="table-responsive">
-            <table class="table table-dark table-hover table-sm mb-0">
-              <thead><tr><th>市场</th><th>概率</th><th>24h Vol</th></tr></thead>
-              <tbody>
-            <tr>
-                <td style="max-width:350px">TCU Horned Frogs vs. Duke Blue Devils</td>
-                <td><small>TCU Horned Frogs: 0.1% | Duke Blue Devils: 100.0%</small></td>
-                <td>$7,259,007</td>
-            </tr>
-            <tr>
-                <td style="max-width:350px">Lakers vs. Magic</td>
-                <td><small>Lakers: 53.5% | Magic: 46.5%</small></td>
-                <td>$4,433,899</td>
-            </tr>
-            <tr>
-                <td style="max-width:350px">Netanyahu out by March 31?</td>
-                <td><small>Yes: 1.3% | No: 98.7%</small></td>
-                <td>$3,689,997</td>
-            </tr>
-            <tr>
-                <td style="max-width:350px">Texas A&M Aggies vs. Houston Cougars</td>
-                <td><small>Texas A&M Aggies: 0.1% | Houston Cougars: 100.0%</small></td>
-                <td>$2,826,266</td>
-            </tr>
-            <tr>
-                <td style="max-width:350px">VCU Rams vs. Illinois Fighting Illini</td>
-                <td><small>VCU Rams: 12.5% | Illinois Fighting Illini: 87.5%</small></td>
-                <td>$2,677,862</td>
-            </tr>
-            <tr>
-                <td style="max-width:350px">Texas Tech Red Raiders vs. Alabama Crimson Tide</td>
-                <td><small>Texas Tech Red Raiders: 52.5% | Alabama Crimson Tide: 47.5%</small></td>
-                <td>$2,577,902</td>
-            </tr>
-            <tr>
-                <td style="max-width:350px">Will Byron Donalds win the 2028 Republican presidential nomination?</td>
-                <td><small>Yes: 0.5% | No: 99.5%</small></td>
-                <td>$2,398,734</td>
-            </tr>
-            <tr>
-                <td style="max-width:350px">Will LMP – Hungary’s Green Party (LMP) win the most seats in the next Hungarian parliamentary election?</td>
-                <td><small>Yes: 0.1% | No: 100.0%</small></td>
-                <td>$2,141,249</td>
-            </tr></tbody>
-            </table>
+        <div class="pos-card">
+          <div class="pos-title">Will Ethereum reach $4,000 in March?</div>
+          <div class="pos-row">
+            <span class="pos-badge" style="background:#da363320;color:#da3633;border:1px solid #da363340">No</span>
+            <span class="pos-stat-label">均价</span><span class="pos-stat">0.998</span>
+            <span class="pos-stat-label">现价</span><span class="pos-stat">$0.998</span>
+          </div>
+          <div class="pos-row" style="margin-top:6px">
+            <span class="pos-stat-label">成本</span><span class="pos-stat">$200.00</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$199.90</span>
+            <span class="pos-pnl" style="color:#f85149">$-0.10 (-0.1%)</span>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="pos-card">
+          <div class="pos-title">Will Crude Oil (CL) hit (HIGH) $100 by end of March?</div>
+          <div class="pos-row">
+            <span class="pos-badge" style="background:#388bfd20;color:#388bfd;border:1px solid #388bfd40">Yes</span>
+            <span class="pos-stat-label">均价</span><span class="pos-stat">0.747</span>
+            <span class="pos-stat-label">现价</span><span class="pos-stat">$0.745</span>
+          </div>
+          <div class="pos-row" style="margin-top:6px">
+            <span class="pos-stat-label">成本</span><span class="pos-stat">$199.97</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$199.30</span>
+            <span class="pos-pnl" style="color:#f85149">$-0.67 (-0.3%)</span>
+          </div>
+        </div>
+        <div class="pos-card">
+          <div class="pos-title">SOL 3月底价格走势（预留仓位）</div>
+          <div class="pos-row">
+            <span class="pos-badge" style="background:#388bfd20;color:#388bfd;border:1px solid #388bfd40">Yes</span>
+            <span class="pos-stat-label">均价</span><span class="pos-stat">0.500</span>
+            <span class="pos-stat-label">现价</span><span class="pos-stat">—</span>
+          </div>
+          <div class="pos-row" style="margin-top:6px">
+            <span class="pos-stat-label">成本</span><span class="pos-stat">$200.00</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$200.00</span>
+            <span class="pos-pnl" style="color:#3fb950">+$0.00 (+0.0%)</span>
+          </div>
+        </div>
+
+  <div class="section-title">最近交易</div>
+  <div class="card-wrap">
+    
+        <div class="hist-row">
+          <span class="hist-badge" style="background:#23863620;color:#238636;border:1px solid #23863640">BUY</span>
+          <span class="hist-market">SOL 3月底价格走势（预留仓位）…</span>
+          <span class="hist-outcome">Yes</span>
+          <span class="hist-amount">$200.00</span>
+          <span class="hist-pnl">—</span>
+          <span class="hist-time">03-22 01:28</span>
+        </div>
+        <div class="hist-row">
+          <span class="hist-badge" style="background:#23863620;color:#238636;border:1px solid #23863640">BUY</span>
+          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $100…</span>
+          <span class="hist-outcome">Yes</span>
+          <span class="hist-amount">$200.00</span>
+          <span class="hist-pnl">—</span>
+          <span class="hist-time">03-22 01:28</span>
+        </div>
+        <div class="hist-row">
+          <span class="hist-badge" style="background:#23863620;color:#238636;border:1px solid #23863640">BUY</span>
+          <span class="hist-market">Will Ethereum reach $4,000 in March…</span>
+          <span class="hist-outcome">No</span>
+          <span class="hist-amount">$200.00</span>
+          <span class="hist-pnl">—</span>
+          <span class="hist-time">03-22 01:28</span>
+        </div>
+        <div class="hist-row">
+          <span class="hist-badge" style="background:#23863620;color:#238636;border:1px solid #23863640">BUY</span>
+          <span class="hist-market">Will Bitcoin dip to $65,000 in Marc…</span>
+          <span class="hist-outcome">Yes</span>
+          <span class="hist-amount">$200.00</span>
+          <span class="hist-pnl">—</span>
+          <span class="hist-time">03-22 01:28</span>
+        </div>
+        <div class="hist-row">
+          <span class="hist-badge" style="background:#da363320;color:#da3633;border:1px solid #da363340">SELL</span>
+          <span class="hist-market">Will Bitcoin dip to $65,000 in Marc…</span>
+          <span class="hist-outcome">Yes</span>
+          <span class="hist-amount">$102.62</span>
+          <span class="hist-pnl"><span style="color:#3fb950">+$0.62</span></span>
+          <span class="hist-time">03-21 09:15</span>
+        </div>
+        <div class="hist-row">
+          <span class="hist-badge" style="background:#23863620;color:#238636;border:1px solid #23863640">BUY</span>
+          <span class="hist-market">Will Bitcoin dip to $65,000 in Marc…</span>
+          <span class="hist-outcome">Yes</span>
+          <span class="hist-amount">$102.00</span>
+          <span class="hist-pnl">—</span>
+          <span class="hist-time">03-21 07:31</span>
+        </div>
+        <div class="hist-row">
+          <span class="hist-badge" style="background:#da363320;color:#da3633;border:1px solid #da363340">SELL</span>
+          <span class="hist-market">Will Bitcoin dip to $65,000 in Marc…</span>
+          <span class="hist-outcome">Yes</span>
+          <span class="hist-amount">$197.02</span>
+          <span class="hist-pnl"><span style="color:#f85149">$-2.98</span></span>
+          <span class="hist-time">03-21 07:31</span>
+        </div>
+        <div class="hist-row">
+          <span class="hist-badge" style="background:#23863620;color:#238636;border:1px solid #23863640">BUY</span>
+          <span class="hist-market">Will Bitcoin dip to $65,000 in Marc…</span>
+          <span class="hist-outcome">Yes</span>
+          <span class="hist-amount">$200.00</span>
+          <span class="hist-pnl">—</span>
+          <span class="hist-time">03-21 06:53</span>
+        </div>
   </div>
 
-  <div class="text-muted text-center mt-3" style="font-size:0.75rem">
-    初始资金 $1,000 | 交易笔数 8 | 目标 $10,000 | 数据更新时间: 2026-03-22 02:03 UTC
-  </div>
+  <div class="footer">初始 $1,000 · 目标 $10,000 · 共 8 笔交易</div>
 </div>
 </body>
 </html>
