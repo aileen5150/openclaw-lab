@@ -57,7 +57,7 @@ table.overview tr:last-child td{border-bottom:none}
 <div class="topbar">
   <div>
     <div class="topbar-title">🦐 Polymarket 模拟盘（多账户）</div>
-    <div class="topbar-sub">更新: 2026-03-25 00:52 UTC</div>
+    <div class="topbar-sub">更新: 2026-03-25 00:54 UTC</div>
   </div>
   <div style="display:flex;align-items:center;gap:12px">
     <span style="font-size:12px;color:var(--muted)">刷新 <span id="refresh-countdown">120s</span></span>
@@ -69,11 +69,11 @@ table.overview tr:last-child td{border-bottom:none}
   <div class="hero">
     <div class="hero-left">
       <div class="hero-label">BTC 现价</div>
-      <div class="hero-btc">$70,842</div>
+      <div class="hero-btc">$70,874</div>
     </div>
     <div class="hero-right">
       <div class="hero-label">全账户总盈亏</div>
-      <div class="hero-pnl" style="color:#f85149">$-64</div>
+      <div class="hero-pnl" style="color:#f85149">$-65</div>
     </div>
   </div>
 
@@ -86,8 +86,8 @@ table.overview tr:last-child td{border-bottom:none}
       <tbody>
         <tr>
           <td style="font-weight:600;color:var(--accent)">BTC</td>
-          <td>$1,027</td>
-          <td>0</td>
+          <td>$977</td>
+          <td>1</td>
           <td>$1,027</td>
           <td style="color:#3fb950">+$27 (+2.7%)</td>
           <td><div class="prog-track"><div class="prog-fill" style="width:10.3%;background:#3fb950"></div></div><span style="font-size:11px;color:var(--muted)">10%</span></td>
@@ -113,10 +113,10 @@ table.overview tr:last-child td{border-bottom:none}
         </tr>
         <tr>
           <td style="font-weight:600;color:var(--accent)">BNB</td>
-          <td>$956</td>
-          <td>0</td>
-          <td>$956</td>
-          <td style="color:#f85149">$-44 (-4.4%)</td>
+          <td>$906</td>
+          <td>1</td>
+          <td>$955</td>
+          <td style="color:#f85149">$-45 (-4.5%)</td>
           <td><div class="prog-track"><div class="prog-fill" style="width:9.6%;background:#f85149"></div></div><span style="font-size:11px;color:var(--muted)">10%</span></td>
           <td style="color:var(--muted)">67%</td>
         </tr>
@@ -149,24 +149,74 @@ table.overview tr:last-child td{border-bottom:none}
         </tr>
         <tr style="border-top:2px solid var(--border);font-weight:600">
           <td style="color:var(--text)">合计</td>
-          <td>$6,936</td>
+          <td>$6,836</td>
           <td>—</td>
-          <td>$6,936</td>
-          <td style="color:#f85149">$-64</td>
+          <td>$6,935</td>
+          <td style="color:#f85149">$-65</td>
           <td>—</td>
           <td style="color:var(--muted)">70%</td>
         </tr></tbody>
     </table>
   </div>
 
-  <div class="section-title">当前持仓 · 0 个</div>
-  <div style="padding:24px;text-align:center;color:#8b949e">暂无持仓</div>
+  <div class="section-title">当前持仓 · 2 个</div>
+  
+        <div class="pos-card">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">BTC 仓</div>
+          <div class="pos-title">Bitcoin Up or Down - March 24, 8:50PM-8:55PM ET</div>
+          <div class="pos-row">
+            <span class="pos-badge" style="background:#da363320;color:#da3633;border:1px solid #da363340">Down</span>
+            <span class="pos-stat-label">均价</span><span class="pos-stat">0.805</span>
+            <span class="pos-stat-label">现价</span><span class="pos-stat">$0.805</span>
+          </div>
+          <div class="pos-row" style="margin-top:6px">
+            <span class="pos-stat-label">成本</span><span class="pos-stat">$49.69</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$49.69</span>
+            <span class="pos-pnl" style="color:#3fb950">+$0.00 (+0.0%)</span>
+          </div>
+        </div>
+        <div class="pos-card">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">BNB 仓</div>
+          <div class="pos-title">BNB Up or Down - March 24, 8:50PM-8:55PM ET</div>
+          <div class="pos-row">
+            <span class="pos-badge" style="background:#da363320;color:#da3633;border:1px solid #da363340">Down</span>
+            <span class="pos-stat-label">均价</span><span class="pos-stat">0.660</span>
+            <span class="pos-stat-label">现价</span><span class="pos-stat">$0.660</span>
+          </div>
+          <div class="pos-row" style="margin-top:6px">
+            <span class="pos-stat-label">成本</span><span class="pos-stat">$49.37</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$49.37</span>
+            <span class="pos-pnl" style="color:#3fb950">+$0.00 (+0.0%)</span>
+          </div>
+        </div>
 
   <div class="section-title">最近交易（全账户合并）</div>
   <div class="card-wrap">
     
         <div id="hist-list">
         <div class="hist-item" data-idx="0" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+            <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
+            <span style="font-size:13px;color:var(--text);flex:1">Bitcoin Up or Down - March 24, 8:50PM-8:55PM ET</span>
+            <span style="font-size:11px;background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:12px;padding:1px 8px">Down</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <div style="background:#23863612;border-radius:6px;padding:8px 10px;border:1px solid #23863630"><div style="font-size:11px;font-weight:600;color:#3fb950;margin-bottom:4px">▲ 买入</div><div style="font-size:14px;font-weight:700">$50.00</div><div style="font-size:12px;color:var(--muted)">61.73份 @ 0.805 <span style="color:#d29922">conf=0.610</span></div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $70,886.52</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:54</div></div>
+            <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="color:#d29922;font-size:12px;padding-top:16px">持仓中…</div></div>
+          </div>
+        </div>
+        <div class="hist-item" data-idx="1" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+            <span style="font-size:11px;font-weight:600;color:var(--accent)">BNB</span>
+            <span style="font-size:13px;color:var(--text);flex:1">BNB Up or Down - March 24, 8:50PM-8:55PM ET</span>
+            <span style="font-size:11px;background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:12px;padding:1px 8px">Down</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <div style="background:#23863612;border-radius:6px;padding:8px 10px;border:1px solid #23863630"><div style="font-size:11px;font-weight:600;color:#3fb950;margin-bottom:4px">▲ 买入</div><div style="font-size:14px;font-weight:700">$50.00</div><div style="font-size:12px;color:var(--muted)">74.80份 @ 0.660 <span style="color:#d29922">conf=0.320</span></div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $640.60</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:54</div></div>
+            <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="color:#d29922;font-size:12px;padding-top:16px">持仓中…</div></div>
+          </div>
+        </div>
+        <div class="hist-item" data-idx="2" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">ETH</span>
             <span style="font-size:13px;color:var(--text);flex:1">Ethereum Up or Down - March 24, 8:40PM-8:45PM ET</span>
@@ -177,7 +227,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$72.14</div><div style="font-size:12px;color:var(--muted)">72.14份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $2,161.76</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:50 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$22.14</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="1" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="3" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BNB</span>
             <span style="font-size:13px;color:var(--text);flex:1">BNB Up or Down - March 24, 8:30PM-8:45PM ET</span>
@@ -188,7 +238,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$45.67</div><div style="font-size:12px;color:var(--muted)">45.67份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $640.55</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:50 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$10.67</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="2" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="4" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">ETH</span>
             <span style="font-size:13px;color:var(--text);flex:1">Ethereum Up or Down - March 24, 8:30PM-8:35PM ET</span>
@@ -199,7 +249,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$0.34</div><div style="font-size:12px;color:var(--muted)">67.38份 @ 0.005</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $2,164.01</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:38 · 翻转止损（价格跌至 $0.0</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-49.19</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="3" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="5" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">SOL</span>
             <span style="font-size:13px;color:var(--text);flex:1">Solana Up or Down - March 24, 8:15PM-8:30PM ET</span>
@@ -210,7 +260,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$24.12</div><div style="font-size:12px;color:var(--muted)">24.12份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $91.07</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:32 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$4.12</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="4" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="6" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BNB</span>
             <span style="font-size:13px;color:var(--text);flex:1">BNB Up or Down - March 24, 8:15PM-8:30PM ET</span>
@@ -221,7 +271,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$23.84</div><div style="font-size:12px;color:var(--muted)">23.84份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $639.26</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:32 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$3.84</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="5" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="7" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BNB</span>
             <span style="font-size:13px;color:var(--text);flex:1">BNB Up or Down - March 24, 8:25PM-8:30PM ET</span>
@@ -232,7 +282,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$0.00</div><div style="font-size:12px;color:var(--muted)">56.05份 @ 0.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $639.26</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:32 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-50.00</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="6" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="8" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">ETH</span>
             <span style="font-size:13px;color:var(--text);flex:1">Ethereum Up or Down - March 24, 8:15PM-8:20PM ET</span>
@@ -243,7 +293,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$53.99</div><div style="font-size:12px;color:var(--muted)">53.99份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $2,154.80</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:24 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$3.99</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="7" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="9" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">SOL</span>
             <span style="font-size:13px;color:var(--text);flex:1">Solana Up or Down - March 24, 8:00PM-8:15PM ET</span>
@@ -254,7 +304,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$40.78</div><div style="font-size:12px;color:var(--muted)">40.78份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $91.09</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:20 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$5.78</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="8" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="10" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
             <span style="font-size:13px;color:var(--text);flex:1">Bitcoin Up or Down - March 24, 8:00PM-8:15PM ET</span>
@@ -265,7 +315,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$46.56</div><div style="font-size:12px;color:var(--muted)">46.56份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $70,599.05</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:18 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$11.56</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="9" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="11" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">ETH</span>
             <span style="font-size:13px;color:var(--text);flex:1">Ethereum Up or Down - March 24, 8:00PM-8:15PM ET</span>
@@ -276,7 +326,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$50.50</div><div style="font-size:12px;color:var(--muted)">50.50份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $2,155.04</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:18 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$15.50</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="10" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="12" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">SOL</span>
             <span style="font-size:13px;color:var(--text);flex:1">Solana Up or Down - March 24, 8:10PM-8:15PM ET</span>
@@ -287,7 +337,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$54.27</div><div style="font-size:12px;color:var(--muted)">54.27份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $91.07</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:18 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$4.27</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="11" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="13" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BNB</span>
             <span style="font-size:13px;color:var(--text);flex:1">BNB Up or Down - March 24, 8:00PM-8:15PM ET</span>
@@ -298,7 +348,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$48.12</div><div style="font-size:12px;color:var(--muted)">48.12份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $639.61</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:18 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$13.12</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="12" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="14" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
             <span style="font-size:13px;color:var(--text);flex:1">Bitcoin Up or Down - March 24, 7:45PM-8:00PM ET</span>
@@ -309,7 +359,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$56.35</div><div style="font-size:12px;color:var(--muted)">56.35份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $70,584.22</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:06 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$6.35</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="13" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="15" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BNB</span>
             <span style="font-size:13px;color:var(--text);flex:1">BNB Up or Down - March 24, 8:00PM-8:05PM ET</span>
@@ -320,7 +370,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$20.90</div><div style="font-size:12px;color:var(--muted)">61.36份 @ 0.345</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $638.74</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:06 · 翻转止损（价格跌至 $0.3</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-28.80</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="14" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="16" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">原油</span>
             <span style="font-size:13px;color:var(--text);flex:1">Will Crude Oil (CL) hit (LOW) $85 by end of March?</span>
@@ -331,7 +381,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$127.38</div><div style="font-size:12px;color:var(--muted)">278.25份 @ 0.465</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $88.83</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:06 · 翻转止损（价格跌至 $0.4</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-2.00</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="15" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="17" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">原油</span>
             <span style="font-size:13px;color:var(--text);flex:1">Will Crude Oil (CL) hit (HIGH) $100 by end of June</span>
@@ -342,7 +392,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$195.24</div><div style="font-size:12px;color:var(--muted)">651.62份 @ 0.303</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $88.83</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:06 · 翻转止损（价格跌至 $0.3</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-2.53</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="16" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="18" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">原油</span>
             <span style="font-size:13px;color:var(--text);flex:1">Will Crude Oil (CL) hit (HIGH) $100 by end of June?</span>
@@ -353,7 +403,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="color:#d29922;font-size:12px;padding-top:16px">持仓中…</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="17" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="19" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">SOL</span>
             <span style="font-size:13px;color:var(--text);flex:1">Solana Up or Down - March 24, 7:45PM-8:00PM ET</span>
@@ -364,7 +414,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$25.61</div><div style="font-size:12px;color:var(--muted)">25.61份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $90.86</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:02 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$5.61</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="18" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="20" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BNB</span>
             <span style="font-size:13px;color:var(--text);flex:1">BNB Up or Down - March 24, 7:45PM-8:00PM ET</span>
@@ -375,7 +425,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$27.31</div><div style="font-size:12px;color:var(--muted)">27.31份 @ 1.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $638.88</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-25 00:02 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$7.31</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="19" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="21" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">ETH</span>
             <span style="font-size:13px;color:var(--text);flex:1">Ethereum Up or Down - March 24, 7:50PM-7:55PM ET</span>
@@ -386,7 +436,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$0.00</div><div style="font-size:12px;color:var(--muted)">68.28份 @ 0.000</div><div style="font-size:11px;color:#58a6ff;margin-top:2px">现货 $2,156.62</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-24 23:58 · 市场结算</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-50.00</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="20" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="22" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
             <span style="font-size:13px;color:var(--text);flex:1">Bitcoin Up or Down - March 24, 7:45PM-7:50PM ET</span>
@@ -800,33 +850,33 @@ table.overview tr:last-child td{border-bottom:none}
     <div id="tab-le" class="tab-pane">
       
         <div style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:2">
-          <div>更新: 2026-03-25 00:52 UTC &nbsp;·&nbsp; 发现市场: 4 个 &nbsp;·&nbsp; 决策记录: 4 条</div>
+          <div>更新: 2026-03-25 00:54 UTC &nbsp;·&nbsp; 发现市场: 4 个 &nbsp;·&nbsp; 决策记录: 4 条</div>
         </div>
       
         <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">BTC</span><span style="background:#23863620;color:#3fb950;border:1px solid #23863640;border-radius:4px;padding:1px 8px;font-size:11px;font-weight:600">✅ 入场</span>
           <span class="hist-market">Bitcoin Up or Down - March 24, 8:50PM-8:55PM ET</span>
-          <span style="color:var(--muted);font-size:12px">置信度不足 (0.050 < 0.3)</span> <span style="font-size:11px;color:#8b949e">conf=0.050 174s</span>
+          <span style="color:#3fb950;font-size:12px">conf=0.610 up=0.195 down=0.805 55s剩余</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">ETH</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Ethereum Up or Down - March 24, 8:50PM-8:55PM ET</span>
-          <span style="color:var(--muted);font-size:12px">置信度不足 (0.130 < 0.3)</span> <span style="font-size:11px;color:#8b949e">conf=0.130 172s</span>
+          <span style="color:var(--muted);font-size:12px">置信度不足 (0.130 < 0.3)</span> <span style="font-size:11px;color:#8b949e">conf=0.130 54s</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">SOL</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Solana Up or Down - March 24, 8:50PM-8:55PM ET</span>
-          <span style="color:var(--muted);font-size:12px">置信度不足 (0.060 < 0.3)</span> <span style="font-size:11px;color:#8b949e">conf=0.060 171s</span>
+          <span style="color:var(--muted);font-size:12px">置信度不足 (0.080 < 0.3)</span> <span style="font-size:11px;color:#8b949e">conf=0.080 53s</span>
         </div>
         <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">BNB</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">BNB</span><span style="background:#23863620;color:#3fb950;border:1px solid #23863640;border-radius:4px;padding:1px 8px;font-size:11px;font-weight:600">✅ 入场</span>
           <span class="hist-market">BNB Up or Down - March 24, 8:50PM-8:55PM ET</span>
-          <span style="color:var(--muted);font-size:12px">置信度不足 (0.000 < 0.3)</span> <span style="font-size:11px;color:#8b949e">conf=0.000 169s</span>
+          <span style="color:#3fb950;font-size:12px">conf=0.320 up=0.340 down=0.660 53s剩余</span>
         </div>
     </div>
   </div>
 
-  <div class="footer">7 个独立账户 · 各 $1,000 初始资金 · 目标各 $10,000 · 共 40 笔交易</div>
+  <div class="footer">7 个独立账户 · 各 $1,000 初始资金 · 目标各 $10,000 · 共 42 笔交易</div>
 </div>
 <script>
 function switchTab(btn, id) {
@@ -838,7 +888,7 @@ function switchTab(btn, id) {
 // 交易记录分页
 var _histPage = 0;
 var _histPageSize = 10;
-var _histTotal = 21;
+var _histTotal = 23;
 function histRender() {
   var items = document.querySelectorAll('.hist-item');
   var start = _histPage * _histPageSize;
