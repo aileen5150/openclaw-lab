@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>🦐 Polymarket 模拟盘</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -57,7 +58,7 @@ table.overview tr:last-child td{border-bottom:none}
 <div class="topbar">
   <div>
     <div class="topbar-title">🦐 Polymarket 模拟盘（多账户）</div>
-    <div class="topbar-sub">更新: 2026-03-28 05:36 UTC</div>
+    <div class="topbar-sub">更新: 2026-03-28 05:38 UTC</div>
   </div>
   <div style="display:flex;align-items:center;gap:12px">
     <span style="font-size:12px;color:var(--muted)">刷新 <span id="refresh-countdown">120s</span></span>
@@ -69,7 +70,7 @@ table.overview tr:last-child td{border-bottom:none}
   <div class="hero">
     <div class="hero-left">
       <div class="hero-label">BTC 现价</div>
-      <div class="hero-btc">$66,341</div>
+      <div class="hero-btc">$66,315</div>
     </div>
     <div class="hero-right">
       <div class="hero-label">全账户总盈亏</div>
@@ -159,6 +160,58 @@ table.overview tr:last-child td{border-bottom:none}
     </table>
   </div>
 
+  <div class="section-title">胜率统计 · 已结算交易</div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+    
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">BTC</div>
+          <div style="font-size:22px;font-weight:800;color:#f85149">0%</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈0 亏1 · 1笔</div>
+          <div style="font-size:12px;font-weight:600;color:#f85149;margin-top:4px">$-200</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">ETH</div>
+          <div style="font-size:22px;font-weight:800;color:#8b949e">—</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈0 亏0 · 0笔</div>
+          <div style="font-size:12px;font-weight:600;color:#3fb950;margin-top:4px">+$0</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">SOL</div>
+          <div style="font-size:22px;font-weight:800;color:#8b949e">—</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈0 亏0 · 0笔</div>
+          <div style="font-size:12px;font-weight:600;color:#3fb950;margin-top:4px">+$0</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">BNB</div>
+          <div style="font-size:22px;font-weight:800;color:#8b949e">—</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈0 亏0 · 0笔</div>
+          <div style="font-size:12px;font-weight:600;color:#3fb950;margin-top:4px">+$0</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">黄金</div>
+          <div style="font-size:22px;font-weight:800;color:#8b949e">—</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈0 亏0 · 0笔</div>
+          <div style="font-size:12px;font-weight:600;color:#3fb950;margin-top:4px">+$0</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">白银</div>
+          <div style="font-size:22px;font-weight:800;color:#8b949e">—</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈0 亏0 · 0笔</div>
+          <div style="font-size:12px;font-weight:600;color:#3fb950;margin-top:4px">+$0</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">原油</div>
+          <div style="font-size:22px;font-weight:800;color:#f85149">0%</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈0 亏5 · 5笔</div>
+          <div style="font-size:12px;font-weight:600;color:#f85149;margin-top:4px">$-434</div>
+        </div>
+  </div>
+
+  <div class="section-title">累计收益曲线 · 全账户合并</div>
+  <div class="card-wrap" style="padding:16px">
+    <canvas id="pnlChart" height="120"></canvas>
+  </div>
+
   <div class="section-title">当前持仓 · 10 个</div>
   
         <div class="pos-card">
@@ -171,8 +224,8 @@ table.overview tr:last-child td{border-bottom:none}
           </div>
           <div class="pos-row" style="margin-top:6px">
             <span class="pos-stat-label">成本</span><span class="pos-stat">$157.98</span>
-            <span class="pos-stat-label">市值</span><span class="pos-stat">$163.32</span>
-            <span class="pos-pnl" style="color:#3fb950">+$5.34 (+3.4%)</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$163.55</span>
+            <span class="pos-pnl" style="color:#3fb950">+$5.57 (+3.5%)</span>
           </div>
         </div>
         <div class="pos-card">
@@ -199,8 +252,8 @@ table.overview tr:last-child td{border-bottom:none}
           </div>
           <div class="pos-row" style="margin-top:6px">
             <span class="pos-stat-label">成本</span><span class="pos-stat">$197.92</span>
-            <span class="pos-stat-label">市值</span><span class="pos-stat">$271.00</span>
-            <span class="pos-pnl" style="color:#3fb950">+$73.08 (+36.9%)</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$270.86</span>
+            <span class="pos-pnl" style="color:#3fb950">+$72.94 (+36.9%)</span>
           </div>
         </div>
         <div class="pos-card">
@@ -293,12 +346,12 @@ table.overview tr:last-child td{border-bottom:none}
           <div class="pos-row">
             <span class="pos-badge" style="background:#da363320;color:#da3633;border:1px solid #da363340">No</span>
             <span class="pos-stat-label">均价</span><span class="pos-stat">0.267</span>
-            <span class="pos-stat-label">现价</span><span class="pos-stat">$0.289</span>
+            <span class="pos-stat-label">现价</span><span class="pos-stat">$0.286</span>
           </div>
           <div class="pos-row" style="margin-top:6px">
             <span class="pos-stat-label">成本</span><span class="pos-stat">$55.25</span>
-            <span class="pos-stat-label">市值</span><span class="pos-stat">$59.80</span>
-            <span class="pos-pnl" style="color:#3fb950">+$4.55 (+8.2%)</span>
+            <span class="pos-stat-label">市值</span><span class="pos-stat">$59.28</span>
+            <span class="pos-pnl" style="color:#3fb950">+$4.03 (+7.3%)</span>
           </div>
         </div>
 
@@ -974,6 +1027,53 @@ table.overview tr:last-child td{border-bottom:none}
   <div class="footer">7 个独立账户 · 各 $1,000 初始资金 · 目标各 $10,000 · 共 22 笔交易</div>
 </div>
 <script>
+// 收益曲线
+(function() {
+  var ctx = document.getElementById('pnlChart');
+  if (!ctx) return;
+  var labels = ["03-27 14:11", "03-27 15:08", "03-27 15:08", "03-27 16:14", "03-27 21:06", "03-27 21:06"];
+  var data = [-45.98, -166.11, -170.21, -369.77, -507.91, -633.5];
+  var finalColor = '#f85149';
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: '累计盈亏 ($)',
+        data: data,
+        borderColor: finalColor,
+        backgroundColor: finalColor + '18',
+        borderWidth: 2,
+        pointRadius: data.length <= 30 ? 4 : 0,
+        pointHoverRadius: 5,
+        fill: true,
+        tension: 0.3,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) { return ' $' + ctx.parsed.y.toFixed(2); }
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: '#8b949e', maxTicksLimit: 8, maxRotation: 0 },
+          grid: { color: '#21262d' }
+        },
+        y: {
+          ticks: { color: '#8b949e', callback: function(v) { return '$' + v; } },
+          grid: { color: '#21262d' },
+          border: { dash: [4,4] }
+        }
+      }
+    }
+  });
+})();
 function switchTab(btn, id) {
   btn.closest('.card-wrap').querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   btn.closest('.card-wrap').querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
