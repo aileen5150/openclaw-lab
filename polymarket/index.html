@@ -58,7 +58,7 @@ table.overview tr:last-child td{border-bottom:none}
 <div class="topbar">
   <div>
     <div class="topbar-title">🦐 Polymarket 模拟盘（多账户）</div>
-    <div class="topbar-sub">更新: 2026-03-30 14:57 UTC</div>
+    <div class="topbar-sub">更新: 2026-03-30 15:23 UTC</div>
   </div>
   <div style="display:flex;align-items:center;gap:12px">
     <span style="font-size:12px;color:var(--muted)">刷新 <span id="refresh-countdown">120s</span></span>
@@ -70,7 +70,7 @@ table.overview tr:last-child td{border-bottom:none}
   <div class="hero">
     <div class="hero-left">
       <div class="hero-label">BTC 现价</div>
-      <div class="hero-btc">$67,782</div>
+      <div class="hero-btc">$67,454</div>
     </div>
     <div class="hero-right">
       <div class="hero-label">全账户总盈亏</div>
@@ -87,12 +87,12 @@ table.overview tr:last-child td{border-bottom:none}
       <tbody>
         <tr>
           <td style="font-weight:600;color:var(--accent)">BTC</td>
-          <td>$683</td>
-          <td>1</td>
+          <td>$710</td>
+          <td>0</td>
           <td>$710</td>
           <td style="color:#f85149">$-290 (-29.0%)</td>
           <td><div class="prog-track"><div class="prog-fill" style="width:7.1%;background:#f85149"></div></div><span style="font-size:11px;color:var(--muted)">7%</span></td>
-          <td style="color:var(--muted)">20%</td>
+          <td style="color:var(--muted)">17%</td>
         </tr>
         <tr>
           <td style="font-weight:600;color:var(--accent)">ETH</td>
@@ -150,12 +150,12 @@ table.overview tr:last-child td{border-bottom:none}
         </tr>
         <tr style="border-top:2px solid var(--border);font-weight:600">
           <td style="color:var(--text)">合计</td>
-          <td>$6,594</td>
+          <td>$6,620</td>
           <td>—</td>
           <td>$6,713</td>
           <td style="color:#f85149">$-287</td>
           <td>—</td>
-          <td style="color:var(--muted)">20%</td>
+          <td style="color:var(--muted)">17%</td>
         </tr></tbody>
     </table>
   </div>
@@ -165,9 +165,9 @@ table.overview tr:last-child td{border-bottom:none}
     
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
           <div style="font-size:11px;color:var(--muted);margin-bottom:4px">BTC</div>
-          <div style="font-size:22px;font-weight:800;color:#f85149">20%</div>
-          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈1 亏4 · 5笔</div>
-          <div style="font-size:12px;font-weight:600;color:#f85149;margin-top:4px">$-157</div>
+          <div style="font-size:22px;font-weight:800;color:#f85149">17%</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">盈1 亏5 · 6笔</div>
+          <div style="font-size:12px;font-weight:600;color:#f85149;margin-top:4px">$-290</div>
         </div>
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:100px;flex:1">
           <div style="font-size:11px;color:var(--muted);margin-bottom:4px">ETH</div>
@@ -212,22 +212,8 @@ table.overview tr:last-child td{border-bottom:none}
     <canvas id="pnlChart" height="120"></canvas>
   </div>
 
-  <div class="section-title">当前持仓 · 2 个</div>
+  <div class="section-title">当前持仓 · 1 个</div>
   
-        <div class="pos-card">
-          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">BTC 仓</div>
-          <div class="pos-title">Will the price of Bitcoin be above $68,000 on March 30?</div>
-          <div class="pos-row">
-            <span class="pos-badge" style="background:#388bfd20;color:#388bfd;border:1px solid #388bfd40">Yes</span>
-            <span class="pos-stat-label">均价</span><span class="pos-stat">0.415</span>
-            <span class="pos-stat-label">现价</span><span class="pos-stat">$0.070</span>
-          </div>
-          <div class="pos-row" style="margin-top:6px">
-            <span class="pos-stat-label">成本</span><span class="pos-stat">$157.64</span>
-            <span class="pos-stat-label">市值</span><span class="pos-stat">$26.59</span>
-            <span class="pos-pnl" style="color:#f85149">$-131.05 (-83.1%)</span>
-          </div>
-        </div>
         <div class="pos-card">
           <div style="font-size:11px;color:var(--muted);margin-bottom:4px">黄金 仓</div>
           <div class="pos-title">Will Gold (GC) hit (HIGH) $5,500 by end of June?</div>
@@ -250,6 +236,17 @@ table.overview tr:last-child td{border-bottom:none}
         <div class="hist-item" data-idx="0" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
+            <span style="font-size:13px;color:var(--text);flex:1">Will the price of Bitcoin be above $68,000 on March 30?</span>
+            <span style="font-size:11px;background:#3fb95020;color:#3fb950;border:1px solid #3fb95040;border-radius:12px;padding:1px 8px">Yes</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <div style="background:#23863612;border-radius:6px;padding:8px 10px;border:1px solid #23863630"><div style="font-size:11px;font-weight:600;color:#3fb950;margin-bottom:4px">▲ 买入</div><div style="font-size:14px;font-weight:700">$160.00</div><div style="font-size:12px;color:var(--muted)">379.86份 @ 0.415</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 08:33</div></div>
+            <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$26.56</div><div style="font-size:12px;color:var(--muted)">379.86份 @ 0.070</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 15:23 · 反向信号平仓 → Yes</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-133.44</div></div>
+          </div>
+        </div>
+        <div class="hist-item" data-idx="1" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+            <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
             <span style="font-size:13px;color:var(--text);flex:1">Will the price of Bitcoin be above $66,000 on March 30?</span>
             <span style="font-size:11px;background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:12px;padding:1px 8px">No</span>
           </div>
@@ -258,7 +255,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$46.28</div><div style="font-size:12px;color:var(--muted)">2892.77份 @ 0.016</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 13:06 · 反向信号平仓 → No</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-112.93</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="1" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="2" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
             <span style="font-size:13px;color:var(--text);flex:1">Will the price of Bitcoin be above $66,000 on March 30?</span>
@@ -269,7 +266,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$138.81</div><div style="font-size:12px;color:var(--muted)">2525.51份 @ 0.055</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 12:05 · 反向信号平仓 → No</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-25.50</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="2" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="3" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
             <span style="font-size:13px;color:var(--text);flex:1">Will the price of Bitcoin be above $66,000 on March 30?</span>
@@ -280,7 +277,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$131.59</div><div style="font-size:12px;color:var(--muted)">2026.34份 @ 0.065</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 11:05 · 反向信号平仓 → No</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-40.91</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="3" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="4" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
             <span style="font-size:13px;color:var(--text);flex:1">Will the price of Bitcoin be above $66,000 on March 30?</span>
@@ -291,7 +288,7 @@ table.overview tr:last-child td{border-bottom:none}
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$212.10</div><div style="font-size:12px;color:var(--muted)">2499.07份 @ 0.085</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 10:19 · 反向信号平仓 → No</div><div style="font-size:14px;font-weight:800;color:#3fb950;margin-top:5px">+$49.51</div></div>
           </div>
         </div>
-        <div class="hist-item" data-idx="4" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
+        <div class="hist-item" data-idx="5" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
             <span style="font-size:13px;color:var(--text);flex:1">Will the price of Bitcoin be above $66,000 on March 30?</span>
@@ -300,17 +297,6 @@ table.overview tr:last-child td{border-bottom:none}
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
             <div style="background:#23863612;border-radius:6px;padding:8px 10px;border:1px solid #23863630"><div style="font-size:11px;font-weight:600;color:#3fb950;margin-bottom:4px">▲ 买入</div><div style="font-size:14px;font-weight:700">$200.00</div><div style="font-size:12px;color:var(--muted)">2663.46份 @ 0.075</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 08:33</div></div>
             <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="font-size:11px;font-weight:600;color:#f85149;margin-bottom:4px">▼ 卖出</div><div style="font-size:14px;font-weight:700">$172.96</div><div style="font-size:12px;color:var(--muted)">2663.46份 @ 0.065</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 09:16 · 反向信号平仓 → No</div><div style="font-size:14px;font-weight:800;color:#f85149;margin-top:5px">$-27.04</div></div>
-          </div>
-        </div>
-        <div class="hist-item" data-idx="5" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
-            <span style="font-size:11px;font-weight:600;color:var(--accent)">BTC</span>
-            <span style="font-size:13px;color:var(--text);flex:1">Will the price of Bitcoin be above $68,000 on March 30?</span>
-            <span style="font-size:11px;background:#3fb95020;color:#3fb950;border:1px solid #3fb95040;border-radius:12px;padding:1px 8px">Yes</span>
-          </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-            <div style="background:#23863612;border-radius:6px;padding:8px 10px;border:1px solid #23863630"><div style="font-size:11px;font-weight:600;color:#3fb950;margin-bottom:4px">▲ 买入</div><div style="font-size:14px;font-weight:700">$160.00</div><div style="font-size:12px;color:var(--muted)">379.86份 @ 0.415</div><div style="font-size:11px;color:var(--muted);margin-top:2px">03-30 08:33</div></div>
-            <div style="background:#da363312;border-radius:6px;padding:8px 10px;border:1px solid #da363330"><div style="color:#d29922;font-size:12px;padding-top:16px">持仓中…</div></div>
           </div>
         </div>
         <div class="hist-item" data-idx="6" style="padding:10px 0;border-bottom:1px solid var(--border);display:none">
@@ -340,485 +326,488 @@ table.overview tr:last-child td{border-bottom:none}
     <div id="tab-auto" class="tab-pane active">
       
         <div style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:2">
-          <div>更新: 2026-03-30 14:05 UTC &nbsp;·&nbsp; 拉取: 2500 &nbsp;·&nbsp; 关键词筛选后: 321 &nbsp;·&nbsp; 信号触发: 0</div>
-          <div style="margin-top:4px">现货: <b>BTC</b> $67,524  <b>ETH</b> $2,061  <b>SOL</b> $84.06  <b>BNB</b> $617  <b>GOLD</b> $4,560  <b>SILVER</b> $70.43  <b>OIL</b> $103</div>
-          <div style="margin-top:4px">30日波动率: <b>BTC</b> 2.63%  <b>ETH</b> 3.31%  <b>SOL</b> 3.02%  <b>BNB</b> 1.91%  <b>GOLD</b> 2.25%  <b>SILVER</b> 4.17%  <b>OIL</b> 5.09%</div>
+          <div>更新: 2026-03-30 15:23 UTC &nbsp;·&nbsp; 拉取: 2500 &nbsp;·&nbsp; 关键词筛选后: 332 &nbsp;·&nbsp; 信号触发: 1</div>
+          <div style="margin-top:4px">现货: <b>BTC</b> $67,445  <b>ETH</b> $2,065  <b>SOL</b> $84.00  <b>BNB</b> $616  <b>GOLD</b> $4,567  <b>SILVER</b> $71.05  <b>OIL</b> $102</div>
+          <div style="margin-top:4px">30日波动率: <b>BTC</b> 2.62%  <b>ETH</b> 3.32%  <b>SOL</b> 3.02%  <b>BNB</b> 1.91%  <b>GOLD</b> 2.26%  <b>SILVER</b> 4.19%  <b>OIL</b> 5.09%</div>
         </div>
       
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Bitcoin be above $60,000 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$930,571</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=99.9%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Bitcoin reach $80,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$860,098</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$858,192</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.2%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);margin-right:6px">OIL</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $100 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$804,877</span>
-          <span style="color:var(--muted);font-size:12px">目标已突破（OIL 现价 $103 已高于 目标 $100，Yes 必然触发）</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be above $60,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$741,092</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$823,165</span>
+          <span style="color:var(--muted);font-size:12px">目标已突破（OIL 现价 $102 已高于 目标 $100，Yes 必然触发）</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will the price of Bitcoin be above $62,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$731,756</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$719,086</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $120 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$530,083</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=1.8%，接近结算)</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$527,611</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=2.0%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Bitcoin dip to $60,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$503,478</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=1.5%，接近结算)</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$526,566</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.9%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $150 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$451,293</span>
+          <span class="hist-market">Will the price of Bitcoin be above $70,000 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$466,509</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.4%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $200 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$394,671</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);margin-right:6px">OIL</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $110 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$387,427</span>
-          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 36%(短线×3))</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be above $64,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$375,839</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=99.9%，接近结算)</span>
+          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $150 by end of March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$452,849</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.4%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will the price of Bitcoin be above $66,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$365,285</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=97.8%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Bitcoin Up or Down on March 30?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$357,196</span>
-          <span style="color:var(--muted);font-size:12px">无法解析目标价格</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$448,576</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=99.7%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $100 by end of June?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$349,565</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=95.2%，接近结算)</span>
+          <span class="hist-market">Will the price of Bitcoin be above $64,000 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$429,002</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Bitcoin Up or Down on March 30?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$406,033</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=99.6%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">OIL</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $110 by end of March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$389,650</span>
+          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 36%(短线×3))</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Bitcoin be above $68,000 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$381,553</span>
+          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 36%(短线×3))</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $200 by end of March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$372,651</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will the price of Bitcoin be above $72,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$348,364</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$342,901</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);margin-right:6px">OIL</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $105 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$335,401</span>
-          <span style="color:var(--muted);font-size:12px">边缘值不足 (13.8% < 36%(短线×3))</span> <span style="color:#d29922;font-size:11px">(edge=13.8% true=48.5% mkt=34.7%)</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$342,190</span>
+          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 36%(短线×3))</span>
         </div>
         <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Bitcoin dip to $50,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$329,749</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">OIL</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $100 by end of June?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$306,427</span>
+          <span style="color:var(--muted);font-size:12px">目标已突破（OIL 现价 $102 已高于 目标 $100，Yes 必然触发）</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Ethereum dip to $1,800 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$302,516</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$301,212</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.7%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be above $70,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$297,199</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.6%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Bitcoin dip to $45,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$293,010</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be above $68,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$273,783</span>
-          <span style="color:var(--muted);font-size:12px">边缘值不足 (13.7% < 36%(短线×3))</span> <span style="color:#d29922;font-size:11px">(edge=13.7% true=34.2% mkt=20.5%)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Bitcoin reach $90,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$246,058</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$293,165</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $130 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$244,933</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.9%，接近结算)</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$249,113</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.8%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Bitcoin dip to $55,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$227,123</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.2%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Bitcoin reach $85,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$207,198</span>
+          <span class="hist-market">Will Bitcoin reach $90,000 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$247,486</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Bitcoin dip to $55,000 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$228,238</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.2%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Bitcoin reach $100,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$206,052</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$205,910</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Bitcoin reach $110,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$196,239</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$196,081</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Bitcoin Up or Down - March 30, 9AM ET</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$174,381</span>
+          <span class="hist-market">Will Bitcoin dip to $50,000 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$189,900</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Bitcoin reach $85,000 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$188,651</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Bitcoin Up or Down - March 30, 10AM ET</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$169,862</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Ethereum Up or Down on March 30?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$161,018</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will the price of Bitcoin be less than $62,000 on Ma…</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$159,648</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$159,579</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $140 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$153,244</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$157,996</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.7%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Bitcoin be between $66,000 and $68…</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$155,891</span>
+          <span style="color:var(--muted);font-size:12px">无法解析目标价格</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);margin-right:6px">GOLD</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Gold (GC) hit (HIGH) $7,000 by end of June?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$153,067</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$152,754</span>
           <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 12%)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Ethereum Up or Down on March 30?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$142,399</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=99.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Crude Oil (CL) hit (HIGH) $180 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$139,953</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$136,908</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Ethereum dip to $1,400 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$137,425</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$135,721</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);margin-right:6px">GOLD</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Gold (GC) hit (LOW) $3,400 by end of June?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$132,788</span>
-          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 12%)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will the price of Ethereum be above $1,800 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$131,529</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=99.9%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Bitcoin Up or Down - March 30, 9:45AM-10:00AM ET</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$120,007</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be between $66,000 and $68…</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$119,348</span>
-          <span style="color:var(--muted);font-size:12px">无法解析目标价格</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Solana dip to $10 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$116,912</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Bitcoin reach $105,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$115,103</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);margin-right:6px">GOLD</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Gold (GC) hit (HIGH) $5,500 by end of June?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$112,124</span>
-          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 12%)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be above $74,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$111,806</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Bitcoin Up or Down - March 30, 8AM ET</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$108,385</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$132,220</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Ethereum be above $2,300 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$106,734</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Solana reach $120 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$101,034</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Crude Oil (CL) settle at $90+ in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$93,860</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=95.5%，接近结算)</span>
+          <span class="hist-market">Will the price of Ethereum be above $2,100 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$124,403</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=1.3%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will the price of Bitcoin be between $62,000 and $64…</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$90,994</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$122,402</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Crude Oil (CL) hit (LOW) $80 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$90,882</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.8%，接近结算)</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$122,151</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.9%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Ethereum dip to $1,600 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$89,944</span>
+          <span class="hist-market">Will Solana dip to $10 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$121,284</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Bitcoin reach $105,000 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$115,153</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">GOLD</span><span style="background:#23863620;color:#3fb950;border:1px solid #23863640;border-radius:4px;padding:1px 8px;font-size:11px;font-weight:600">✅ Yes</span>
+          <span class="hist-market">Will Gold (GC) hit (HIGH) $5,500 by end of June?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$112,165</span>
+          <span style="color:#3fb950;font-size:12px">edge=12.7% true=39.1% mkt=26.4%</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Bitcoin be above $74,000 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$110,818</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Ethereum be above $2,300 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$110,206</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">GOLD</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Gold (GC) hit (LOW) $3,400 by end of June?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$106,433</span>
+          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 12%)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Solana reach $120 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$100,734</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Crude Oil (CL) settle at $90+ in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$95,840</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=96.5%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Bitcoin be above $78,000 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$94,172</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Ethereum reach $2,400 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$89,645</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.7%，接近结算)</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$91,888</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.8%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Ethereum dip to $1,600 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$89,371</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Bitcoin be between $68,000 and $70…</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$87,677</span>
+          <span style="color:var(--muted);font-size:12px">无法解析目标价格</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will the price of Bitcoin be above $80,000 on April …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$85,603</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$85,738</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Ethereum reach $3,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$84,581</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);margin-right:6px">ETH</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Ethereum be above $2,100 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$80,566</span>
-          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 36%(短线×3))</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Ethereum be above $1,600 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$78,287</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be above $78,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$77,084</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Ethereum reach $3,600 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$76,880</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Ethereum be between $1,700 and $1,…</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$74,833</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Ethereum dip to $800 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$70,940</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Bitcoin reach $68,000 on March 30?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$70,917</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Ethereum reach $3,200 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$70,744</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$84,352</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will Crude Oil (CL) hit (LOW) $85 by end of March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$69,726</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=1.7%，接近结算)</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$79,682</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.9%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Solana dip to $70 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$68,876</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.6%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Ethereum be between $2,400 and $2,…</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$66,145</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Ethereum reach $4,000 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$65,127</span>
+          <span class="hist-market">Will the price of Ethereum be between $1,700 and $1,…</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$79,333</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
           <span class="hist-market">Will the price of Bitcoin be between $64,000 and $66…</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$63,879</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=1.7%，接近结算)</span>
-        </div>
-        <div class="hist-row">
-          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Microstrategy announce a Bitcoin purchase March…</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$63,439</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$78,228</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be above $62,000 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$60,224</span>
-          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=99.3%，接近结算)</span>
+          <span class="hist-market">Will the price of Ethereum be above $1,600 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$76,987</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Bitcoin be between $68,000 and $70…</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$58,946</span>
-          <span style="color:var(--muted);font-size:12px">无法解析目标价格</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Bitcoin reach $76,000 March 30-April 5?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$56,151</span>
+          <span class="hist-market">Will Bitcoin reach $74,000 March 30-April 5?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$75,599</span>
           <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 12%)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will Ethereum reach $2,800 in March?</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$55,809</span>
+          <span class="hist-market">Will Ethereum dip to $800 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$70,882</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Bitcoin reach $76,000 March 30-April 5?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$67,811</span>
+          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 12%)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Solana dip to $70 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$67,776</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.8%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Ethereum be between $2,400 and $2,…</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$64,955</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
         <div class="hist-row">
           <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Will the price of Ethereum be above $1,700 on March …</span>
-          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$54,433</span>
+          <span class="hist-market">Will Microstrategy announce a Bitcoin purchase March…</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$62,410</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Ethereum Up or Down - March 30, 10AM ET</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$62,280</span>
           <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Bitcoin be above $62,000 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$61,075</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=99.5%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Bitcoin Up or Down - March 30, 11:15AM-11:20AM ET</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$59,308</span>
+          <span style="color:var(--muted);font-size:12px">无法解析目标价格</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Ethereum reach $4,000 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$57,731</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Ethereum reach $3,200 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$56,555</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Ethereum reach $2,800 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$55,505</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="font-size:11px;color:var(--accent);margin-right:6px">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Bitcoin be above $70,000 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$55,463</span>
+          <span style="color:var(--muted);font-size:12px">边缘值不足 (0.0% < 12%)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Ethereum be above $1,700 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$54,633</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Ethereum be above $1,900 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$53,262</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=100.0%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will Ethereum reach $3,600 in March?</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$52,563</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
+        </div>
+        <div class="hist-row">
+          <span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
+          <span class="hist-market">Will the price of Ethereum be above $2,200 on March …</span>
+          <span style="font-size:11px;color:var(--muted);white-space:nowrap">$50,885</span>
+          <span style="color:var(--muted);font-size:12px">价格极端 (Yes=0.1%，接近结算)</span>
         </div>
     </div>
     <div id="tab-le" class="tab-pane">
       
         <div style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:2">
-          <div>更新: 2026-03-30 14:57 UTC &nbsp;·&nbsp; 发现市场: 7 个 &nbsp;·&nbsp; 决策记录: 7 条</div>
+          <div>更新: 2026-03-30 15:02 UTC &nbsp;·&nbsp; 发现市场: 4 个 &nbsp;·&nbsp; 决策记录: 4 条</div>
         </div>
       
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Bitcoin Up or Down - March 30, 10:55AM-11:00AM ET</span>
-          <span style="color:var(--muted);font-size:12px">置信度不足 (0.090 < 0.5)</span> <span style="font-size:11px;color:#8b949e">conf=0.090 230s</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">BTC</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Bitcoin Up or Down - March 30, 10:45AM-11:00AM ET</span>
-          <span style="color:var(--muted);font-size:12px">价格过高 (0.965 > 0.78)</span> <span style="font-size:11px;color:#8b949e">conf=0.930 218s</span>
+          <span class="hist-market">Bitcoin Up or Down - March 30, 11:00AM-11:05AM ET</span>
+          <span style="color:var(--muted);font-size:12px">置信度不足 (0.130 < 0.5)</span> <span style="font-size:11px;color:#8b949e">conf=0.130 171s</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">ETH</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Ethereum Up or Down - March 30, 10:55AM-11:00AM ET</span>
-          <span style="color:var(--muted);font-size:12px">置信度不足 (0.060 < 0.5)</span> <span style="font-size:11px;color:#8b949e">conf=0.060 227s</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">ETH</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Ethereum Up or Down - March 30, 10:45AM-11:00AM ET</span>
-          <span style="color:var(--muted);font-size:12px">价格过高 (0.955 > 0.78)</span> <span style="font-size:11px;color:#8b949e">conf=0.910 216s</span>
+          <span class="hist-market">Ethereum Up or Down - March 30, 11:00AM-11:05AM ET</span>
+          <span style="color:var(--muted);font-size:12px">置信度不足 (0.060 < 0.5)</span> <span style="font-size:11px;color:#8b949e">conf=0.060 169s</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">SOL</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Solana Up or Down - March 30, 10:55AM-11:00AM ET</span>
-          <span style="color:var(--muted);font-size:12px">置信度不足 (0.030 < 0.5)</span> <span style="font-size:11px;color:#8b949e">conf=0.030 225s</span>
-        </div>
-        <div class="hist-row">
-          <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">SOL</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">Solana Up or Down - March 30, 10:45AM-11:00AM ET</span>
-          <span style="color:var(--muted);font-size:12px">价格过高 (0.905 > 0.78)</span> <span style="font-size:11px;color:#8b949e">conf=0.810 212s</span>
+          <span class="hist-market">Solana Up or Down - March 30, 11:00AM-11:05AM ET</span>
+          <span style="color:var(--muted);font-size:12px">置信度不足 (0.030 < 0.5)</span> <span style="font-size:11px;color:#8b949e">conf=0.030 167s</span>
         </div>
         <div class="hist-row">
           <span style="font-size:11px;color:var(--accent);min-width:32px;display:inline-block">BNB</span><span style="background:#f8514920;color:#f85149;border:1px solid #f8514940;border-radius:4px;padding:1px 8px;font-size:11px">跳过</span>
-          <span class="hist-market">BNB Up or Down - March 30, 10:55AM-11:00AM ET</span>
-          <span style="color:var(--muted);font-size:12px">置信度不足 (0.080 < 0.5)</span> <span style="font-size:11px;color:#8b949e">conf=0.080 222s</span>
+          <span class="hist-market">BNB Up or Down - March 30, 11:00AM-11:05AM ET</span>
+          <span style="color:var(--muted);font-size:12px">置信度不足 (0.090 < 0.5)</span> <span style="font-size:11px;color:#8b949e">conf=0.090 164s</span>
         </div>
     </div>
   </div>
 
-  <div class="footer">7 个独立账户 · 各 $1,000 初始资金 · 目标各 $10,000 · 共 12 笔交易</div>
+  <div class="footer">7 个独立账户 · 各 $1,000 初始资金 · 目标各 $10,000 · 共 13 笔交易</div>
 </div>
 <script>
 // 收益曲线
 (function() {
   var ctx = document.getElementById('pnlChart');
   if (!ctx) return;
-  var labels = ["03-30 09:16", "03-30 10:19", "03-30 11:05", "03-30 12:05", "03-30 13:06"];
-  var data = [-27.04, 22.48, -18.43, -43.94, -156.86];
+  var labels = ["03-30 09:16", "03-30 10:19", "03-30 11:05", "03-30 12:05", "03-30 13:06", "03-30 15:23"];
+  var data = [-27.04, 22.48, -18.43, -43.94, -156.86, -290.3];
   var finalColor = '#f85149';
   new Chart(ctx, {
     type: 'line',
