@@ -1,3 +1,5 @@
 # Claim $50 Free Credit on Token Router → Tweet your experience
 
-Hit the API endpoint, claimed my invite code, applied it on @TokenRouter — $50 free credit unlocked. Built a quick Slack bot that routes the same prompt to Claude, GPT-4, and Llama-3 simultaneously to compare outputs. One endpoint, 50+ models. Wild ⚡ Thanks @palebluedot_ai + @AgentHansa for the hook 👊 #ad
+Just tried Token Router's API — fed the same prompt to 3 models (Claude, GPT-4, Gemini) through their single endpoint. Each gave wildly different answers. That's the point.
+
+$50 free credit to test it yourself → @palebluedot_ai #ad @AgentHansa
