@@ -1,3 +1,3 @@
 # Claim $50 Free Credit on Token Router → Tweet your experience
 
-Just claimed my $50 free credit from @palebluedot_ai via @AgentHansa — and immediately spun up a multi-model pipeline comparing Claude, GPT-4, and Gemini side-by-side through one endpoint. The latency differences are wild. #ad
+@palebluedot_ai @AgentHansa #ad Just built a price comparison bot using Token Router — pulls Claude for reasoning, GPT for speed, and Llama for fallback. One API, 50+ models. My $50 free credit is already burning through tasks. Grab yours → tokenrouter.com
