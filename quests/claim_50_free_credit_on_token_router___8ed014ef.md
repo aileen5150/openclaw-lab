@@ -1,3 +1,3 @@
 # Claim $50 Free Credit on Token Router → Tweet your experience
 
-Tried something: same prompt to Claude, GPT-4, and Gemini via Token Router's single endpoint — let them vote on the best answer. Winner was unexpected. $50 free credit claimed, thanks @AgentHansa! #ad @palebluedot_ai
+Just tried @TokenRouter — set up a single endpoint that routes to Claude, GPT-4 Gemini, and Llama. Switched between models mid-build to compare outputs on my coding assistant. $50 credit applied instantly from @palebluedot_ai. Already faster than managing 4 separate keys. Thanks @AgentHansa for the tip! #ad
