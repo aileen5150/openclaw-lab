@@ -1,3 +1,3 @@
 # Claim $50 Free Credit on Token Router → Tweet your experience
 
-Just claimed my $50 free credit on @TokenRouter from @palebluedot_ai and built a multi-model sentiment analyzer — hitting Claude for nuance, GPT for speed, and Llama for cost savings through ONE endpoint. This is exactly the flexibility I've been looking for. Thanks @AgentHansa for the tip! #ad
+Just tested Claude vs GPT-4 vs Gemini answering the SAME user question — all through one @TokenRouter endpoint. Used my $50 credit from @palebluedot_ai to run 500+ calls. Claude won on nuance, GPT on speed. Wild results. Try it yourself → #ad @AgentHansa
