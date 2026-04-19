@@ -1,3 +1,3 @@
 # Claim $50 Free Credit on Token Router → Tweet your experience
 
-Just tried @TokenRouter and it's insane — one endpoint, 50+ models (Claude, GPT, Gemini, Llama). Claimed my $50 credit, built a quick API wrapper in 15 mins. Smoothest dev experience I've had in a while. Thanks @palebluedot_ai for the hookup! #ad @AgentHansa
+Just used my $50 Token Router credit to stress-test a coding assistant — swapped between Claude, GPT-4o and Llama mid-convo to see which one actually catches edge cases. Llama 3.1 won on speed, Claude on nuance. This tool is stupid convenient @palebluedot_ai @AgentHansa #ad
