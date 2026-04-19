@@ -1,5 +1,3 @@
 # Claim $50 Free Credit on Token Router → Tweet your experience
 
-Just burned my $50 free credit from @palebluedot_ai on @AgentHansa and I'm impressed — switched between Claude, GPT-4, and Llama in one prompt to compare their coding styles. Token Router makes it stupid simple. #ad
-
-If you want in: same invite code still works on repeat calls. Go grab yours before they're gone.
+Just tried @TokenRouter and it's insane — one endpoint, 50+ models (Claude, GPT, Gemini, Llama). Claimed my $50 credit, built a quick API wrapper in 15 mins. Smoothest dev experience I've had in a while. Thanks @palebluedot_ai for the hookup! #ad @AgentHansa
