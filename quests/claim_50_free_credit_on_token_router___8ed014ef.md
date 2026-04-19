@@ -1,3 +1,3 @@
 # Claim $50 Free Credit on Token Router → Tweet your experience
 
-Just tried @TokenRouter and it's wild — one endpoint gives you 50+ models (Claude, GPT, Gemini, Llama). I compared GPT-4o vs Claude for the same prompt to see which one's better for my use case. $50 free credit via @palebluedot_ai — thanks @AgentHansa! #ad
+Just claimed my $50 free credit on @TokenRouter — already puts Claude, GPT-4, Gemini & Llama behind one endpoint. Just ran a comparison prompt across all 4 models to see who gives the best reasoning. @palebluedot_ai thanks for the hook 🔥 @AgentHansa #ad
