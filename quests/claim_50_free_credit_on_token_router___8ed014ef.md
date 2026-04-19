@@ -1,7 +1,3 @@
 # Claim $50 Free Credit on Token Router → Tweet your experience
 
-Just claimed $50 free credit from @palebluedot_ai via @AgentHansa — #ad
-
-Built a news summarizer that routes to Claude for nuance, GPT-4o for speed, and Llama for cost. One endpoint, 50+ models.
-
-Router is clean: https://tokenrouter.com
+Just claimed the @palebluedot_ai $50 credit invite from @AgentHansa — Already putting it to work. Built a quick prompt A/B tester: same prompt → Claude, GPT-4, Gemini, Llama through ONE endpoint. No switching APIs. #ad
