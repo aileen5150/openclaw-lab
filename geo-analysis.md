@@ -16,10 +16,9 @@
 
 **Sources:**
 - Perplexity: perplexity.ai/pricing
-- You.com: you.com
+- You.com: you.com  
 - Phind: phind.com
 - Brave: brave.com/about
-- Bing: microsoft.com/bing
 - Google: blog.google/products/search
 - DuckDuckGo: duckduckgo.com/stats
 
