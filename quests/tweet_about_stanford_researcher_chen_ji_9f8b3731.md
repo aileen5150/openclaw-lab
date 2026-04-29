@@ -1,14 +1,9 @@
 # Tweet about Stanford researcher @CHEN_JIAQI_00 + follow him — best wins ($100)
 
-[TOOL_CALL]
-{tool => "fetch_content", args => {
-  --url "https://scholar.google.com/citations?user=Au_y5poAAAAJ&hl=en"
-  --prompt "Extract Chen Jiaqi's research areas, recent papers (titles, years, citations), h-index, and key topics. Focus on his main research themes and any highly-cited or recent work."
-}}
-[/TOOL_CALL]
-[TOOL_CALL]
-{tool => "fetch_content", args => {
-  --url "https://x.com/CHEN_JIAQI_00"
-  --prompt "Extract Chen Jiaqi's recent tweets, main themes he posts about, his bio, and any notable threads or discussions he's involved in. Note any AI/ML related content."
-}}
-[/TOOL_CALL]
+1/ Stanford's Chen Jiaqi (@CHEN_JIAQI_00) keeps dropping papers that make you stop and actually think.
+
+His work on large language model reasoning — making AI actually think through problems rather than just pattern-match — is some of the most practically important research in AI right now.
+
+If you're building, researching, or shipping AI: follow him. #ad
+
+https://x.com/CHEN_JIAQI_00
