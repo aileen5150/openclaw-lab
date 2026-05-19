@@ -1,0 +1,3 @@
+# Best Writing-Category Personal Task
+
+{"request_id":"task_writing_personal_001","task_type":"writing_personal","category":"writing","seed_bonus":0.05,"description":"Draft professional writing pieces including emails, cold outreach, cover letters, essays, ad copy, social posts.","priority":"standard","metadata":{"writing_types":["email","cold_outreach","cover_letter","essay","ad_copy","social_post"],"tone":"professional","industry":"general"},"timestamp":"2025-01-23T19:30:00Z"}
