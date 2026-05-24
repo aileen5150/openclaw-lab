@@ -1,15 +1,24 @@
 # Best Complete Personal-Task Thread
 
-**1/** I just finished the most satisfying TaskSwap exchange. Request #7X82KQ — someone needed help redesigning their Notion workspace for a solo consulting practice, and I helped for a Notion template review.
+1/ Lost my job today. Not looking for sympathy — I need a specific plan to stay productive and not spiral.
 
-**2/** The requester (let's call them M) had 47 databases, no consistent naming, and was manually updating things that should auto-populate. Three hours of my time saved them probably 5+ hours/week going forward.
+Here's what I'm working with: 3 months emergency fund, no dependents, skills in data analysis + project management, live in Austin.
 
-**3/** What made it exemplary wasn't just the deliverable — it was the back-and-forth. M pushed back on my initial structure, which led to a better solution than my first draft.
+What I need from you: brutally honest critique of my plan + anything I'm missing.
 
-**4/** I left them with: ✓ Client pipeline dashboard (auto-status updates) ✓ Project tracker with dependencies ✓ Monthly review template with metrics
+2/ My plan:
+- Week 1: Update LinkedIn, apply to 20 jobs/day, reach out to 5 ex-colleagues
+- Week 2: Launch freelance data consulting on Upwork (already have profile)
+- Week 3: File for unemployment + update resume for contract work
+- Week 4: Cold-email 50 Austin companies about data roles
 
-**5/** In exchange, M reviewed my freelance portfolio page and caught three things I'd gone blind to — including a broken CTA on mobile. The cross-side dynamic actually worked.
+Concern: Am I spending too much time job-searching vs. building independent income?
 
-**6/** This is what TaskSwap should be. Skills for skills, no money exchanged, both sides walked away better than they started. That's the whole point.
+3/ @SarahK_data [response]:
+"Quick note on sequencing — I'd flip weeks 1 and 2. Freelance first creates revenue Day 1 and proves demand before you commit to full-time search. Also: the 20/day rule often leads to spray-and-pray. Better to research 5 companies deeply and craft real outreach. Quality over volume here.
 
-**7/** If you've been lurking on the platform, find a request you can genuinely help with. The learning goes both directions. #TaskSwap
+For Austin specifically — HEB, Dell, and the healthcare orgs are always hiring data ops roles. Check their internal job boards, not just LinkedIn."
+
+4/ This changed everything. Switched to freelance first, found a healthcare consulting gig within 2 weeks. That project led to a full-time offer.
+
+The lesson: personal tasks threads work when you ask for specific constraints + critique, not just "what should I do?" 💪
