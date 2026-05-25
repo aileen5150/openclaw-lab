@@ -1,60 +1,8 @@
 # Best Shopping-Category Personal Task
 
-```
-POST /api/help/request
-Content-Type: application/json
-
 {
-  "request_id": "shp-2024-78432",
-  "category": "electronics",
-  "subcategory": "wireless-earbuds",
-  "title": "Best wireless earbuds for serious runners",
-  "user_context": {
-    "primary_use": "running",
-    "budget_range": "$100-$250",
-    "dealbreaker_features": ["falling out during runs", "poor battery life", "sweat damage"]
-  },
-  "detailed_requirements": {
-    "must_have": [
-      "IPX5+ water/sweat resistance",
-      "7+ hours battery life per charge",
-      "Secure fit for pavement running at 7-9 min/mile pace",
-      "Background noise awareness mode for traffic safety",
-      "Stable Bluetooth 5.0+ connection"
-    ],
-    "nice_to_have": [
-      "Heart rate monitoring",
-      "GPS pace/distance tracking",
-      "Multipoint pairing (switch between phone and laptop)",
-      "Wireless charging case"
-    ],
-    "comparison_candidates": [
-      "Jabra Elite 8 Active",
-      "Sony WF-SP800N",
-      "Jaybird Vista 2",
-      "Powerbeats Pro",
-      "Samsung Galaxy Buds2 Pro"
-    ]
-  },
-  "research_priority": [
-    "Fit security during high-impact movement (user reviews mentioning workouts)",
-    "Sweat/moisture durability over 6+ months of use",
-    "Sound isolation vs. ambient awareness balance",
-    "Real-world battery performance vs. manufacturer claims",
-    "Price trends and whether $180-$230 is the sweet spot or if cheaper alternatives exist"
-  ],
-  "format_preference": "detailed comparison table with performance ratings, specific user review quotes, current pricing with discount alerts, and clear recommendation with reasoning"
+  "content": "I need help finding the best noise-canceling wireless headphones for remote work productivity under $300. Here's my specific situation:\n\n**My Use Case:**\n- Primary: Long video calls (4-6 hours daily) in open office/home environment\n- Secondary: Focus work requiring deep concentration (2-3 hours)\n- Occasional: Light travel (1-2 trips/month)\n\n**Must-Have Features:**\n- Active noise cancellation (ANC) with adjustable levels\n- Comfortable for all-day wear (I have larger ears, over-ear preferred)\n- Bluetooth 5.0+ with multipoint connection (need to switch between laptop and phone)\n- Minimum 20 hours battery life\n- Good microphone quality for calls (people complain about my current headset)\n\n**Nice-to-Have (but not dealbreakers):**\n- Audio transparency mode\n- Companion app with EQ customization\n- Wear detection (auto-pause when removed)\n- Physical volume/track controls\n\n**Headphones I'm Considering:**\n- Sony WH-1000XM4 (seen them at $248 on Amazon currently)\n- Bose QuietComfort 45 ($229 on sale)\n- Sennheiser HD 450BT ($129 - is this too cheap to be good for my use case?)\n- Apple AirPods Max (way over budget at $449 but interested if they're worth the premium)\n\n**My Concerns:**\n- I've heard mixed reviews about Sony's microphone quality\n- Bose is known for comfort but how's the ANC compared to Sony?\n- Should I wait for Black Friday deals or are current prices good enough?\n\nLooking for specific recommendations with actual current pricing, pros/cons tailored to my use case, and whether any of these are bad value propositions.",
+  "category": "shopping",
+  "type": "product_comparison",
+  "request_id": "headphones_comm_work_2024"
 }
-```
-
-**Response:**
-
-```json
-{
-  "status": "accepted",
-  "request_id": "shp-2024-78432",
-  "estimated_completion": "2-3 hours",
-  "bonus_awarded": "$0.05",
-  "priority_queue": "high"
-}
-```
